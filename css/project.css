@@ -51,7 +51,6 @@ img{
 header{
     padding:1rem 2rem;
     color: rgb(0, 0, 0);
-
     background-repeat: no-repeat;
     background-color: rgb(90,90,90);
     min-height: 300px;
@@ -69,6 +68,7 @@ nav{
     padding:1rem 2rem;
 }
 .mainnav{
+    padding: 0.5rem 0.5rem;
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -83,12 +83,13 @@ nav > a:visited,
 nav > a:link{
     font-variant: small-caps;
     color: rgb(255, 255, 255);
+    text-decoration:none;
 }
 nav > a:active,
 nav > a:focus,
 nav > a:hover{
     text-shadow: 0px 0px 10px rgb(0,0,0);
-    
+    font-size: 1.1rem;
 }
 
 /*************************************************
@@ -131,12 +132,24 @@ section p img{
 *************************************************/
 footer{
     padding:1rem 2rem;
+    display: grid;
+    grid-template-areas: "FLA FB FLB";
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(200,200,200);
+    border-top: 1px solid rgb(0,0,0);
 }
 .foot nav{
+    grid-area: FB;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "FLA FLB";
+    padding: 0rem 0rem 0rem 1rem;
+    border-left: 1px dotted rgb(0,0,0);
     
+
 }
 .foot section{
-    
+
 }
 .foot dl{
     
@@ -156,11 +169,36 @@ footer{
 .foot dd a:hover{
     
 }
+.docs{
+    grid-area: FLA;
+}
+.channels{
+    grid-area: FLB;
+}
+.comments{
+
+}
+#name{
+    width: 80%  
+}
+#email{
+    width: 80%;
+}
+#city{
+    width: 40%;
+}
+#comment{
+    width: 80%;
+    height: 100px;
+}
 /*************************************************
             MEDIA QUERIES for layout
 *************************************************/
 @media (max-width: 599px){
 
+    html{
+        min-width: 400px;
+    }
     header{
         min-height: 200px;
         background-image: url(/img/img_600.jpg);
@@ -181,6 +219,19 @@ footer{
         grid-template-areas: "A"
                              "B"
                              "C";
+    } 
+    #name{
+        width: 90%  
+    }
+    #email{
+        width: 90%;
+    }
+    #city{
+        width: 50%;
+    }
+    #comment{
+        width: 90%;
+        height: 100px;
     }
 }
 @media (min-width: 600px) and (max-width:999px){
@@ -189,10 +240,20 @@ footer{
         background-image: url(/img/img_1000.jpg);
     }
     .mainnav{
-        max-height:58px;
+        max-height: 40px;
     }
-    .mainnav a:hover{
-        font-size: 1.1rem;
+    #name{
+        width: 90%  
+    }
+    #email{
+        width: 90%;
+    }
+    #city{
+        width: 50%;
+    }
+    #comment{
+        width: 90%;
+        height: 100px;
     }
 }
 @media (min-width: 1000px){
@@ -201,9 +262,6 @@ footer{
         background-image: url(/img/img_1500.jpg);
     }
     .mainnav{
-        max-height:58px;
-    }
-    .mainnav a:hover{
-        font-size: 1.1rem;
+        max-height: 40px;
     }
 }
