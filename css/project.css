@@ -19,10 +19,9 @@ html{
     /* change this font stack to your own choices */
     line-height: 1.5;
     max-width: 1500px;
-    height: auto;
+    height: 100%;
     margin: auto;
-    background-image: linear-gradient(rgb(255,255,255),rgb(80,80,80));
-    background-size:auto;
+    background: linear-gradient(rgb(255,255,255),rgb(80,80,80)) fixed;
 }
 .container{
     background: rgb(255,255,255);
