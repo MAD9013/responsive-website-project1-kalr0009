@@ -215,7 +215,7 @@ footer{
     }
     header{
         min-height: 200px;
-        background-image: url("/img/img_600.jpg");
+        background-image: url("img/img_600.jpg");
     }
     
     .mainnav{
