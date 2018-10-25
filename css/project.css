@@ -43,7 +43,8 @@ li{
     
 }
 img{
-    width: 25%;
+    width: 35%;
+
 }
 
 /*************************************************
@@ -51,10 +52,12 @@ img{
 *************************************************/
 header{
     padding:1rem 2rem;
-    color: rgb(0, 0, 0);
+    color: rgb(222, 222, 222);
     background-repeat: no-repeat;
     background-color: rgb(90,90,90);
     min-height: 300px;
+    border-top: 20px solid rgb(4, 74, 9);
+    text-shadow: 1px 2px rgb(4, 74, 9);
 }
 header > h1{
     
@@ -107,6 +110,8 @@ main h1, main h2{
     padding: 1rem 0rem ;
     border-bottom: 1px dotted rgb(0,0,0);
     left: 50%;
+    color: rgb(4, 74, 9);
+    text-shadow: -1px 1px rgb(222, 222, 222);
     
 }
 section{
@@ -117,6 +122,13 @@ section p{
     
 }
 section p img{
+    min-width: 155px;
+    max-width: 300px;
+    min-height: 125px;
+    max-height: 175px;
+    float: left;
+    margin: 0.1rem 1rem 0rem 0rem;
+    border: 1px solid black;
     
 }
 .first.segment{
@@ -146,6 +158,7 @@ footer{
     grid-template-areas: "FLA FLB";
     padding: 0rem 0rem 0rem 1rem;
     border-left: 1px dotted rgb(0,0,0);
+
     
 
 }
@@ -163,12 +176,12 @@ footer{
 }
 .foot dd a,
 .foot dd a:visited{
-    
+        color: rgb(4, 74, 9);
 }
 .foot dd a:active,
 .foot dd a:focus,
 .foot dd a:hover{
-    
+        font-weight: bold;
 }
 .docs{
     grid-area: FLA;
@@ -202,7 +215,7 @@ footer{
     }
     header{
         min-height: 200px;
-        background-image: url(/responsive-website-project1-kalr0009/img/img_600.jpg);
+        background-image: url("/img/img_600.jpg");
     }
     
     .mainnav{
@@ -238,7 +251,7 @@ footer{
 @media (min-width: 600px) and (max-width:999px){
     header{
         min-height: 250px;
-        background-image: url(/responsive-website-project1-kalr0009/img/img_1000.jpg);
+        background-image: url("/img/img_1000.jpg");
     }
     .mainnav{
         max-height: 40px;
@@ -260,7 +273,7 @@ footer{
 @media (min-width: 1000px){
     header{
         min-height: 300px;
-        background-image: url(/responsive-website-project1-kalr0009/img/img_1500.jpg);
+        background-image: url("/img/img_1500.jpg");
     }
     .mainnav{
         max-height: 40px;
