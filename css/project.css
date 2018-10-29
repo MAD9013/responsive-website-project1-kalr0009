@@ -230,6 +230,7 @@ footer{
         font-size: 1.5rem;
     }
     main{
+        font-size: 1.2rem;
         grid-template-areas: "A"
                              "B"
                              "C";
@@ -255,6 +256,9 @@ footer{
     }
     .mainnav{
         max-height: 40px;
+    }
+    main{
+        font-size: 1.1rem;
     }
     #name{
         width: 90%  
