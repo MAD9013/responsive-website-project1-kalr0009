@@ -44,7 +44,7 @@ li{
 }
 img{
     width: 35%;
-
+    
 }
 
 /*************************************************
@@ -169,6 +169,8 @@ footer{
     
 }
 .foot dt{
+    font-weight: bold;
+    color: rgb(4, 74, 9);
     
 }
 .foot dd{
@@ -176,12 +178,13 @@ footer{
 }
 .foot dd a,
 .foot dd a:visited{
-        color: rgb(4, 74, 9);
+    color: rgb(4, 74, 9);
 }
 .foot dd a:active,
 .foot dd a:focus,
 .foot dd a:hover{
-        font-weight: bold;
+    font-weight: bold;
+ 
 }
 .docs{
     grid-area: FLA;
@@ -193,17 +196,21 @@ footer{
 
 }
 #name{
-    width: 80%  
+    width: 40%  
 }
 #email{
-    width: 80%;
+    width: 39.6%;
 }
 #city{
     width: 40%;
+    margin: 0px 0px 5px 0px;
 }
 #comment{
     width: 80%;
     height: 100px;
+}
+#btnSend{
+    padding: 2px;
 }
 /*************************************************
             MEDIA QUERIES for layout
@@ -211,7 +218,7 @@ footer{
 @media (max-width: 599px){
 
     html{
-        min-width: 400px;
+        min-width: 450px;
     }
     header{
         min-height: 200px;
